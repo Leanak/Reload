@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 12:51:39 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 12:51:41 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-
-/*void	ft_putchar(char c)
+int	ft_sqrt(int nb)
 {
-	write(1, &c, 1);
-}*/
+	int	i;
 
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = '0';
-	while (c <= '9')
+	i = 1;
+	if (nb <= 0)
 	{
-		ft_putchar(c);
-		c++;
+		return (0);
 	}
-}
-
-/*int	main(void)
-{
-	ft_print_numbers();
+	while (i < nb)
+	{
+		if (i * i == nb)
+			return (i);
+		else
+            i++;
+	}
 	return (0);
+}
+/*int main(void)
+{
+printf("%d", ft_sqrt(-10));
+return (0);
 }*/

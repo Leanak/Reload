@@ -1,38 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 12:52:00 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 12:52:02 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-
-/*void	ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
-}*/
+}
 
-
-void	ft_print_numbers(void)
+void	ft_putstr(char *str)
 {
-	char	c;
+	int	i;
 
-	c = '0';
-	while (c <= '9')
+	i = 0;
+
+	while (str[i])
 	{
-		ft_putchar(c);
-		c++;
+		ft_putchar(str[i]);
+		i++;
 	}
 }
 
 /*int	main(void)
 {
-	ft_print_numbers();
+	char	str[] = "Hello123";
+
+	ft_putstr(str);
 	return (0);
 }*/

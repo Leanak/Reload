@@ -1,38 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 13:36:01 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 13:36:03 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-
-/*void	ft_putchar(char c)
+int	ft_strcmp(char *s1, char *s2)
 {
-	write(1, &c, 1);
-}*/
+	int	i;
 
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = '0';
-	while (c <= '9')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	i = 0;
+	while ((s1[i] || s2[i]) && (s1[i] == s2[i]))
+			i++;
+	return (s1[i] - s2[i]);
 }
 
 /*int	main(void)
 {
-	ft_print_numbers();
+	char	s1[] = "Hey1288";
+	char	s2[] = "Hey1288";
+
+	printf("%d", ft_strcmp(s1, s2));
 	return (0);
 }*/

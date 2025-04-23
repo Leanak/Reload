@@ -1,38 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 12:36:58 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 12:37:00 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-
-/*void	ft_putchar(char c)
+int	ft_recursive_factorial(int nb)
 {
-	write(1, &c, 1);
-}*/
-
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = '0';
-	while (c <= '9')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	if (nb > 0)
+		return (nb * ft_recursive_factorial(nb - 1));
+	else if (nb < 0)
+		return (0);
+	return (1);
 }
+
 
 /*int	main(void)
 {
-	ft_print_numbers();
+	printf("%d", ft_recursive_factorial(5));
 	return (0);
 }*/

@@ -1,0 +1,1 @@
+alias wcc="cc -Wall -Wextra -Werror"

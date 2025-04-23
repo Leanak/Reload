@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 13:11:23 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 13:11:24 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-
-/*void	ft_putchar(char c)
+int	ft_strlen(char *str)
 {
-	write(1, &c, 1);
-}*/
+	int	i;
 
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = '0';
-	while (c <= '9')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
 /*int	main(void)
 {
-	ft_print_numbers();
+	char	str[] = "01234";
+
+	printf("%d", ft_strlen(str));
 	return (0);
 }*/

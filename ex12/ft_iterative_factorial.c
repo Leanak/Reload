@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:47:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:49:43 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/23 12:36:22 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/23 12:36:25 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-
-/*void	ft_putchar(char c)
+int	ft_iterative_factorial(int nb)
 {
-	write(1, &c, 1);
-}*/
+	int	j;
 
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = '0';
-	while (c <= '9')
+	j = nb;
+	if (nb == 0)
+		return (1);
+	if (nb < 0)
+		return (0);
+	while (nb > 1)
 	{
-		ft_putchar(c);
-		c++;
+		j = j * (nb - 1);
+		nb--;
 	}
+	return (j);
 }
 
 /*int	main(void)
 {
-	ft_print_numbers();
+	printf("%d", ft_iterative_factorial(-10));
 	return (0);
 }*/
