@@ -10,16 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_iterative_factorial(int nb)
 {
 	int	j;
 
 	j = nb;
-	if (nb == 0)
+	if (nb == 0 || nb == 1)
 		return (1);
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 		return (0);
 	while (nb > 1)
 	{
@@ -31,6 +31,6 @@ int	ft_iterative_factorial(int nb)
 
 /*int	main(void)
 {
-	printf("%d", ft_iterative_factorial(-10));
+	printf("%d", ft_iterative_factorial(13));
 	return (0);
 }*/

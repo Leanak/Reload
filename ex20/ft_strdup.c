@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -47,10 +46,10 @@ char	*ft_strdup(char *src)
 	return (ft_strcpy(src, dest));
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	src[] = "";
 
 	printf("%s", ft_strdup(src));
 	return (0);
-}
+}*/

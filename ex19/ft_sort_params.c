@@ -12,10 +12,7 @@
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_params(char *str)
 {
@@ -39,7 +36,6 @@ int	ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-
 void	ft_swap(char **s1, char **s2)
 {
 	char	*s3;
@@ -61,15 +57,11 @@ int	main(int argc, char **argv)
 		while (j < argc)
 		{
 			if (ft_strcmp(argv[i], argv[j]) > 0)
-			{
 				ft_swap(&argv[i], &argv[j]);
-			}
 			j++;
-
 		}
 		i++;
 	}
-
 	i = 1;
 	while (i < argc)
 	{

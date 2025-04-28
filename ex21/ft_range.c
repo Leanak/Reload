@@ -9,12 +9,13 @@
 /*   Updated: 2025/04/24 10:04:18 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
+//#include <stdio.h>
 #include <stdlib.h>
 
 int	*ft_range(int min, int max)
 {
-    int	*tab;
+	int	*tab;
 	int	i;
 	int	j;
 
@@ -22,7 +23,6 @@ int	*ft_range(int min, int max)
 	if (min >= max)
 		return (NULL);
 	j = max - min;
-
 	tab = malloc (j * sizeof(int));
 	if (!tab)
 		return (NULL);
@@ -34,7 +34,7 @@ int	*ft_range(int min, int max)
 	return (tab);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	*tab;
 	int	i;
@@ -48,4 +48,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/

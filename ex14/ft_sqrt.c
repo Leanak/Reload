@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_sqrt(int nb)
 {
@@ -18,15 +18,13 @@ int	ft_sqrt(int nb)
 
 	i = 1;
 	if (nb <= 0)
-	{
 		return (0);
-	}
 	while (i < nb)
 	{
 		if (i * i == nb)
 			return (i);
 		else
-            i++;
+			i++;
 	}
 	return (0);
 }

@@ -5,13 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:53:42 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/22 17:59:51 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/28 14:45:40 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/28 14:45:41 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {

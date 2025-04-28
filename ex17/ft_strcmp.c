@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/23 13:36:01 by lenakach          #+#    #+#             */
-/*   Updated: 2025/04/23 13:36:03 by lenakach         ###   ########.fr       */
+/*   Created: 2025/04/26 12:11:55 by lenakach          #+#    #+#             */
+/*   Updated: 2025/04/26 12:12:00 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
